@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58A5560E1DE54074004D1625 /* DRCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A5560D1DE54074004D1625 /* DRCategoriesViewController.m */; };
+		58A556121DE54114004D1625 /* DRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A556111DE54114004D1625 /* DRBaseViewController.m */; };
+		58A556161DE55BF0004D1625 /* Pods.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 58A556141DE55BF0004D1625 /* Pods.debug.xcconfig */; };
+		58A556171DE55BF0004D1625 /* Pods.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 58A556151DE55BF0004D1625 /* Pods.release.xcconfig */; };
+		58A5561C1DE58FE2004D1625 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A5561B1DE58FE2004D1625 /* libPods.a */; };
+		58A556201DE5A0BE004D1625 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A5561F1DE5A0BE004D1625 /* UIImage+Common.m */; };
+		58A556271DE5A712004D1625 /* DRRecipeCategoriesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A556261DE5A712004D1625 /* DRRecipeCategoriesCell.m */; };
+		58A5562B1DE5A7E2004D1625 /* DRBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A5562A1DE5A7E2004D1625 /* DRBaseCell.m */; };
+		58A5562E1DE5C8FB004D1625 /* DRRecipeCategoriesHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A5562D1DE5C8FB004D1625 /* DRRecipeCategoriesHeaderView.m */; };
 		8478BF7F1DE4A3610052E351 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BF7E1DE4A3610052E351 /* main.m */; };
 		8478BF821DE4A3610052E351 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BF811DE4A3610052E351 /* AppDelegate.m */; };
 		8478BF851DE4A3610052E351 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BF841DE4A3610052E351 /* ViewController.m */; };
@@ -36,6 +45,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		58A556091DE53CBC004D1625 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Common/Headers/Constants.h; sourceTree = "<group>"; };
+		58A5560A1DE53DC5004D1625 /* dqxRecipe.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dqxRecipe.pch; sourceTree = "<group>"; };
+		58A5560C1DE5402F004D1625 /* DRCategoriesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRCategoriesViewController.h; path = ViewControllers/RecipeCategories/DRCategoriesViewController.h; sourceTree = "<group>"; };
+		58A5560D1DE54074004D1625 /* DRCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRCategoriesViewController.m; path = ViewControllers/RecipeCategories/DRCategoriesViewController.m; sourceTree = "<group>"; };
+		58A556101DE540FB004D1625 /* DRBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRBaseViewController.h; path = ViewControllers/Base/DRBaseViewController.h; sourceTree = "<group>"; };
+		58A556111DE54114004D1625 /* DRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRBaseViewController.m; path = ViewControllers/Base/DRBaseViewController.m; sourceTree = "<group>"; };
+		58A556141DE55BF0004D1625 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		58A556151DE55BF0004D1625 /* Pods.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		58A5561B1DE58FE2004D1625 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		58A5561E1DE5A0BE004D1625 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Common.h"; path = "Common/Categories/UIImage+Common.h"; sourceTree = "<group>"; };
+		58A5561F1DE5A0BE004D1625 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Common.m"; path = "Common/Categories/UIImage+Common.m"; sourceTree = "<group>"; };
+		58A556211DE5A525004D1625 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = Common/Headers/Macros.h; sourceTree = "<group>"; };
+		58A556251DE5A6FE004D1625 /* DRRecipeCategoriesCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRRecipeCategoriesCell.h; path = CustomViews/RecipeCategories/Cells/DRRecipeCategoriesCell.h; sourceTree = "<group>"; };
+		58A556261DE5A712004D1625 /* DRRecipeCategoriesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRRecipeCategoriesCell.m; path = CustomViews/RecipeCategories/Cells/DRRecipeCategoriesCell.m; sourceTree = "<group>"; };
+		58A556291DE5A7CD004D1625 /* DRBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRBaseCell.h; path = CustomViews/Base/DRBaseCell.h; sourceTree = "<group>"; };
+		58A5562A1DE5A7E2004D1625 /* DRBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRBaseCell.m; path = CustomViews/Base/DRBaseCell.m; sourceTree = "<group>"; };
+		58A5562C1DE5C8E5004D1625 /* DRRecipeCategoriesHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRRecipeCategoriesHeaderView.h; path = CustomViews/RecipeCategories/DRRecipeCategoriesHeaderView.h; sourceTree = "<group>"; };
+		58A5562D1DE5C8FB004D1625 /* DRRecipeCategoriesHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRRecipeCategoriesHeaderView.m; path = CustomViews/RecipeCategories/DRRecipeCategoriesHeaderView.m; sourceTree = "<group>"; };
 		8478BF7A1DE4A3610052E351 /* dqxRecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dqxRecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8478BF7E1DE4A3610052E351 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8478BF801DE4A3610052E351 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58A5561C1DE58FE2004D1625 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,13 +109,114 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58A556071DE53C6B004D1625 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				58A5561D1DE5A05B004D1625 /* Categories */,
+				58A556081DE53C79004D1625 /* Headers */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		58A556081DE53C79004D1625 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				58A556091DE53CBC004D1625 /* Constants.h */,
+				58A556211DE5A525004D1625 /* Macros.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		58A5560B1DE53F94004D1625 /* RecipeCategories */ = {
+			isa = PBXGroup;
+			children = (
+				58A5560C1DE5402F004D1625 /* DRCategoriesViewController.h */,
+				58A5560D1DE54074004D1625 /* DRCategoriesViewController.m */,
+			);
+			name = RecipeCategories;
+			sourceTree = "<group>";
+		};
+		58A5560F1DE540CF004D1625 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				58A556101DE540FB004D1625 /* DRBaseViewController.h */,
+				58A556111DE54114004D1625 /* DRBaseViewController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		58A556131DE55B56004D1625 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58A556141DE55BF0004D1625 /* Pods.debug.xcconfig */,
+				58A556151DE55BF0004D1625 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		58A5561A1DE58FE2004D1625 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58A5561B1DE58FE2004D1625 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58A5561D1DE5A05B004D1625 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				58A5561E1DE5A0BE004D1625 /* UIImage+Common.h */,
+				58A5561F1DE5A0BE004D1625 /* UIImage+Common.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		58A556221DE5A62C004D1625 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				58A556281DE5A7AC004D1625 /* Base */,
+				58A556231DE5A652004D1625 /* RecipeCategories */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		58A556231DE5A652004D1625 /* RecipeCategories */ = {
+			isa = PBXGroup;
+			children = (
+				58A556241DE5A679004D1625 /* Cells */,
+				58A5562C1DE5C8E5004D1625 /* DRRecipeCategoriesHeaderView.h */,
+				58A5562D1DE5C8FB004D1625 /* DRRecipeCategoriesHeaderView.m */,
+			);
+			name = RecipeCategories;
+			sourceTree = "<group>";
+		};
+		58A556241DE5A679004D1625 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				58A556251DE5A6FE004D1625 /* DRRecipeCategoriesCell.h */,
+				58A556261DE5A712004D1625 /* DRRecipeCategoriesCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		58A556281DE5A7AC004D1625 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				58A556291DE5A7CD004D1625 /* DRBaseCell.h */,
+				58A5562A1DE5A7E2004D1625 /* DRBaseCell.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		8478BF711DE4A3610052E351 = {
 			isa = PBXGroup;
 			children = (
+				58A556131DE55B56004D1625 /* Pods */,
 				8478BF7C1DE4A3610052E351 /* dqxRecipe */,
 				8478BF961DE4A3610052E351 /* dqxRecipeTests */,
 				8478BFA11DE4A3610052E351 /* dqxRecipeUITests */,
 				8478BF7B1DE4A3610052E351 /* Products */,
+				58A5561A1DE58FE2004D1625 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +233,8 @@
 		8478BF7C1DE4A3610052E351 /* dqxRecipe */ = {
 			isa = PBXGroup;
 			children = (
+				58A556221DE5A62C004D1625 /* CustomViews */,
+				58A556071DE53C6B004D1625 /* Common */,
 				8478BFB01DE4A7410052E351 /* ViewControllers */,
 				8478BF801DE4A3610052E351 /* AppDelegate.h */,
 				8478BF811DE4A3610052E351 /* AppDelegate.m */,
@@ -122,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				8478BF7E1DE4A3610052E351 /* main.m */,
+				58A5560A1DE53DC5004D1625 /* dqxRecipe.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,6 +279,8 @@
 		8478BFB01DE4A7410052E351 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				58A5560F1DE540CF004D1625 /* Base */,
+				58A5560B1DE53F94004D1625 /* RecipeCategories */,
 				8478BFB11DE4A77B0052E351 /* TabBar */,
 			);
 			name = ViewControllers;
@@ -171,6 +305,7 @@
 				8478BF761DE4A3610052E351 /* Sources */,
 				8478BF771DE4A3610052E351 /* Frameworks */,
 				8478BF781DE4A3610052E351 /* Resources */,
+				58A556181DE58E60004D1625 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,7 +363,7 @@
 				TargetAttributes = {
 					8478BF791DE4A3610052E351 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 887CVK63XR;
+						DevelopmentTeam = 62JG8Z6Y54;
 						ProvisioningStyle = Automatic;
 					};
 					8478BF921DE4A3610052E351 = {
@@ -271,6 +406,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8478BF8D1DE4A3610052E351 /* LaunchScreen.storyboard in Resources */,
+				58A556171DE55BF0004D1625 /* Pods.release.xcconfig in Resources */,
+				58A556161DE55BF0004D1625 /* Pods.debug.xcconfig in Resources */,
 				8478BF8A1DE4A3610052E351 /* Assets.xcassets in Resources */,
 				8478BF881DE4A3610052E351 /* Main.storyboard in Resources */,
 			);
@@ -292,6 +429,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58A556181DE58E60004D1625 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods/Pods-frameworks.sh\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8478BF761DE4A3610052E351 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -299,8 +454,14 @@
 			files = (
 				8478BF851DE4A3610052E351 /* ViewController.m in Sources */,
 				8478BFB41DE4A8E50052E351 /* DRTabBarController.m in Sources */,
+				58A5560E1DE54074004D1625 /* DRCategoriesViewController.m in Sources */,
+				58A5562E1DE5C8FB004D1625 /* DRRecipeCategoriesHeaderView.m in Sources */,
+				58A556121DE54114004D1625 /* DRBaseViewController.m in Sources */,
+				58A556201DE5A0BE004D1625 /* UIImage+Common.m in Sources */,
+				58A5562B1DE5A7E2004D1625 /* DRBaseCell.m in Sources */,
 				8478BF821DE4A3610052E351 /* AppDelegate.m in Sources */,
 				8478BF7F1DE4A3610052E351 /* main.m in Sources */,
+				58A556271DE5A712004D1625 /* DRRecipeCategoriesCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,10 +608,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 887CVK63XR;
+				DEVELOPMENT_TEAM = 62JG8Z6Y54;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = dqxRecipe/dqxRecipe.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"dqxRecipe/ViewControllers/Base\"",
+					"\"dqxRecipe/ViewControllers/RecipeCategories\"",
+					"\"dqxRecipe/ViewControllers/TabBar\"",
+					"\"dqxRecipe/Common/Categories\"",
+					"\"dqxRecipe/Common/Headers\"",
+					"\"dqxRecipe/CustomViews/Base\"",
+					"\"dqxRecipe/CustomViews/RecipeCategories/Cells\"",
+					"\"dqxRecipe/CustomViews/RecipeCategories\"",
+				);
 				INFOPLIST_FILE = dqxRecipe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "\"${SRCROOT}/../build/Debug-iphoneos";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"MBProgressHUD\"",
+					"-l\"Masonry\"",
+				);
+				PODS_ROOT = ../Pods;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.mengyoutu.dqxRecipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -460,10 +644,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 887CVK63XR;
+				DEVELOPMENT_TEAM = 62JG8Z6Y54;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = dqxRecipe/dqxRecipe.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"dqxRecipe/ViewControllers/Base\"",
+					"\"dqxRecipe/ViewControllers/RecipeCategories\"",
+					"\"dqxRecipe/ViewControllers/TabBar\"",
+					"\"dqxRecipe/Common/Categories\"",
+					"\"dqxRecipe/Common/Headers\"",
+					"\"dqxRecipe/CustomViews/Base\"",
+					"\"dqxRecipe/CustomViews/RecipeCategories/Cells\"",
+					"\"dqxRecipe/CustomViews/RecipeCategories\"",
+				);
 				INFOPLIST_FILE = dqxRecipe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "\U0003";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"MBProgressHUD\"",
+					"-l\"Masonry\"",
+				);
+				PODS_ROOT = ../Pods;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.mengyoutu.dqxRecipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -1,0 +1,2 @@
+/Users/shaowennhan/WorkDir/MyOne3-iOS/MyOne3/Pods/MJRefresh/MJRefresh/MJRefresh.bundle
+/Users/shaowennhan/Library/Developer/Xcode/DerivedData/MyOne3-bjkyxlxbprqmezfocjyfgqujflyv/Build/Products/Debug-iphoneos/NYTPhotoViewer.bundle
