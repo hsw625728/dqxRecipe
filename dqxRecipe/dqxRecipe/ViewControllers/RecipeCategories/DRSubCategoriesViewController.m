@@ -60,9 +60,101 @@
 #pragma mark - Private Method
 
 - (void)initDatas {
-    sectionTitles = RECIPT_SECTION1_1;
-    rowTitles = RECIPT_SECTION1_1_SUB;
-    rowImageNames = RECIPT_SECTION1_1_SUB_IMAGE;
+    switch(self.index)
+    {
+        case 11:
+            sectionTitles = RECIPT_SECTION1_1;
+            rowTitles = RECIPT_SECTION1_1_SUB;
+            rowImageNames = RECIPT_SECTION1_1_SUB_IMAGE;
+            break;
+        case 12:
+            sectionTitles = RECIPT_SECTION1_2;
+            rowTitles = RECIPT_SECTION1_2_SUB;
+            rowImageNames = RECIPT_SECTION1_2_SUB_IMAGE;
+            break;
+        case 13:
+            sectionTitles = RECIPT_SECTION1_3;
+            rowTitles = RECIPT_SECTION1_3_SUB;
+            rowImageNames = RECIPT_SECTION1_3_SUB_IMAGE;
+            break;
+        case 21:
+            sectionTitles = RECIPT_SECTION2_1;
+            rowTitles = RECIPT_SECTION2_1_SUB;
+            rowImageNames = RECIPT_SECTION2_1_SUB_IMAGE;
+            break;
+        case 31:
+            sectionTitles = RECIPT_SECTION3_1;
+            rowTitles = RECIPT_SECTION3_1_SUB;
+            rowImageNames = RECIPT_SECTION3_1_SUB_IMAGE;
+            break;
+        case 32:
+            sectionTitles = RECIPT_SECTION3_2;
+            rowTitles = RECIPT_SECTION3_2_SUB;
+            rowImageNames = RECIPT_SECTION3_2_SUB_IMAGE;
+            break;
+        case 33:
+            sectionTitles = RECIPT_SECTION3_3;
+            rowTitles = RECIPT_SECTION3_3_SUB;
+            rowImageNames = RECIPT_SECTION3_3_SUB_IMAGE;
+            break;
+        case 34:
+            sectionTitles = RECIPT_SECTION3_4;
+            rowTitles = RECIPT_SECTION3_4_SUB;
+            rowImageNames = RECIPT_SECTION3_4_SUB_IMAGE;
+            break;
+        case 41:
+            sectionTitles = RECIPT_SECTION4_1;
+            rowTitles = RECIPT_SECTION4_1_SUB;
+            rowImageNames = RECIPT_SECTION4_1_SUB_IMAGE;
+            break;
+        case 42:
+            sectionTitles = RECIPT_SECTION4_2;
+            rowTitles = RECIPT_SECTION4_2_SUB;
+            rowImageNames = RECIPT_SECTION4_2_SUB_IMAGE;
+            break;
+        case 43:
+            sectionTitles = RECIPT_SECTION4_3;
+            rowTitles = RECIPT_SECTION4_3_SUB;
+            rowImageNames = RECIPT_SECTION4_3_SUB_IMAGE;
+            break;
+        case 44:
+            sectionTitles = RECIPT_SECTION4_4;
+            rowTitles = RECIPT_SECTION4_4_SUB;
+            rowImageNames = RECIPT_SECTION4_4_SUB_IMAGE;
+            break;
+        case 51:
+            sectionTitles = RECIPT_SECTION5_1;
+            rowTitles = RECIPT_SECTION5_1_SUB;
+            rowImageNames = RECIPT_SECTION5_1_SUB_IMAGE;
+            break;
+        case 52:
+            sectionTitles = RECIPT_SECTION5_2;
+            rowTitles = RECIPT_SECTION5_2_SUB;
+            rowImageNames = RECIPT_SECTION5_2_SUB_IMAGE;
+            break;
+        case 61:
+            sectionTitles = RECIPT_SECTION6_1;
+            rowTitles = RECIPT_SECTION6_1_SUB;
+            rowImageNames = RECIPT_SECTION6_1_SUB_IMAGE;
+            break;
+        case 62:
+            sectionTitles = RECIPT_SECTION6_2;
+            rowTitles = RECIPT_SECTION6_2_SUB;
+            rowImageNames = RECIPT_SECTION6_2_SUB_IMAGE;
+            break;
+        case 63:
+            sectionTitles = RECIPT_SECTION6_3;
+            rowTitles = RECIPT_SECTION6_3_SUB;
+            rowImageNames = RECIPT_SECTION6_3_SUB_IMAGE;
+            break;
+        case 64:
+            sectionTitles = RECIPT_SECTION6_4;
+            rowTitles = RECIPT_SECTION6_4_SUB;
+            rowImageNames = RECIPT_SECTION6_4_SUB_IMAGE;
+            break;
+        default:
+            break;
+    }
 }
 
 - (void)setupViews {

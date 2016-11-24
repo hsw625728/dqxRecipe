@@ -166,8 +166,9 @@
     //    //[self presentLoginOptsViewController];
     //    return;
     //}
-    
-    [self.navigationController pushViewController:[[DRSubCategoriesViewController alloc] init] animated:YES];
+    DRSubCategoriesViewController *subview = [[DRSubCategoriesViewController alloc] init];
+    [subview setIndex:((int)((indexPath.section+1)*10 + (indexPath.row+1)))];
+    [self.navigationController pushViewController:subview animated:YES];
 }
 
 

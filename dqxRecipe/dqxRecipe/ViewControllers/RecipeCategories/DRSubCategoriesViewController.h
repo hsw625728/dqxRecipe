@@ -12,7 +12,7 @@
 #import "DRBaseViewController.h"
 
 @interface DRSubCategoriesViewController : DRBaseViewController
-
+@property (nonatomic, assign) int index;
 @end
 
 #endif /* DRSubCategoriesViewController_h */
