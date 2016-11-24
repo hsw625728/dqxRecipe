@@ -1,26 +1,26 @@
 //
-//  DRCategoriesViewController.m
+//  DRSubCategoriesViewController.m
 //  dqxRecipe
 //
-//  Created by HANSHAOWEN on 16/11/23.
+//  Created by HANSHAOWEN on 16/11/24.
 //  Copyright © 2016年 mengyoutu.cn. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "DRCategoriesViewController.h"
+
+#import "DRSubCategoriesViewController.h"
 #import "UIImage+Common.h"
 #import "DRRecipeCategoriesCell.h"
 #import "DRRecipeCategoriesHeaderView.h"
 #import "View+MASAdditions.h"
-#import "DRSubCategoriesViewController.h"
 
-@interface DRCategoriesViewController() <UITableViewDataSource, UITableViewDelegate>
+@interface DRSubCategoriesViewController() <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
 
 @end
 
-@implementation DRCategoriesViewController{
+@implementation DRSubCategoriesViewController{
     NSArray *sectionTitles;
     NSArray *rowTitles;
     NSArray *rowImageNames;
@@ -60,19 +60,9 @@
 #pragma mark - Private Method
 
 - (void)initDatas {
-    sectionTitles = @[@"武器锻造", @"防具锻造", @"道具锻造", @"木工", @"裁缝", @"烹饪"];
-    rowTitles = @[@[@"武器配方", @"家具配方", @"庭具配方"],
-                  @[@"防具锻造配方"],
-                  @[@"道具配方", @"家具配方", @"庭具配方", @"素材配方"],
-                  @[@"武器配方", @"家具配方", @"庭具配方", @"钓竿配方"],
-                  @[@"防具配方", @"家具配方"],
-                  @[@"肉料理配方", @"鱼料理配方", @"意面和米饭配方", @"甜点配方"]];
-    rowImageNames = @[@[@"section1", @"section1", @"section1"],
-                      @[@"section2"],
-                      @[@"section3", @"section3", @"section3", @"section3"],
-                      @[@"section4", @"section4", @"section4", @"section4"],
-                      @[@"section5", @"section5"],
-                      @[@"section6", @"section6", @"section6", @"section6"]];
+    sectionTitles = RECIPT_SECTION1_1;
+    rowTitles = RECIPT_SECTION1_1_SUB;
+    rowImageNames = RECIPT_SECTION1_1_SUB_IMAGE;
 }
 
 - (void)setupViews {
@@ -89,25 +79,25 @@
         tableView.rowHeight = [DRRecipeCategoriesCell cellHeight];
         
         /*
-        UIImageView *headerImageView = [[UIImageView alloc] initWithImage:[UIImage mlb_imageWithName:@"personalBackgroundImage" cached:NO]];
-        headerImageView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 206);
-        headerImageView.contentMode = UIViewContentModeScaleAspectFill;
-        ParallaxHeaderView *parallaxHeaderView = [ParallaxHeaderView parallaxHeaderViewWithSubView:headerImageView];
-        
-        UIImageView *shadowView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"movie_shadow"]];
-        [parallaxHeaderView addSubview:shadowView];
-        [shadowView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.height.equalTo(@50);
-            make.left.bottom.right.equalTo(parallaxHeaderView);
-        }];
-        
-        [parallaxHeaderView addSubview:_headerView];
-        [_headerView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.height.equalTo(@([_headerView viewHeight]));
-            make.left.bottom.right.equalTo(parallaxHeaderView);
-        }];
-        
-        tableView.tableHeaderView = parallaxHeaderView;
+         UIImageView *headerImageView = [[UIImageView alloc] initWithImage:[UIImage mlb_imageWithName:@"personalBackgroundImage" cached:NO]];
+         headerImageView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 206);
+         headerImageView.contentMode = UIViewContentModeScaleAspectFill;
+         ParallaxHeaderView *parallaxHeaderView = [ParallaxHeaderView parallaxHeaderViewWithSubView:headerImageView];
+         
+         UIImageView *shadowView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"movie_shadow"]];
+         [parallaxHeaderView addSubview:shadowView];
+         [shadowView mas_makeConstraints:^(MASConstraintMaker *make) {
+         make.height.equalTo(@50);
+         make.left.bottom.right.equalTo(parallaxHeaderView);
+         }];
+         
+         [parallaxHeaderView addSubview:_headerView];
+         [_headerView mas_makeConstraints:^(MASConstraintMaker *make) {
+         make.height.equalTo(@([_headerView viewHeight]));
+         make.left.bottom.right.equalTo(parallaxHeaderView);
+         }];
+         
+         tableView.tableHeaderView = parallaxHeaderView;
          */
         [self.view addSubview:tableView];
         [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -161,13 +151,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    //if (indexPath.section == 1 && indexPath.row == 1)
-    //{
-    //    //[self presentLoginOptsViewController];
-    //    return;
-    //}
+    if (indexPath.section == 1 && indexPath.row == 1)
+    {
+        //[self presentLoginOptsViewController];
+        return;
+    }
     
-    [self.navigationController pushViewController:[[DRSubCategoriesViewController alloc] init] animated:YES];
+    //[self.navigationController pushViewController:[[DRCategoriesViewController alloc] init] animated:YES];
 }
 
 

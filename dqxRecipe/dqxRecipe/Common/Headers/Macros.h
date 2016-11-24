@@ -51,4 +51,43 @@
 #define IsStringEmpty(string)           (!string || [@"" isEqualToString:string])
 #define IsStringNotEmpty(string)        (string && ![@"" isEqualToString:string])
 
+//详细的数据
+//武器锻造－武器配方
+#define RECIPT_SECTION1_1               @[@"单手剑", @"双手剑", @"短剑", @"矛", @"斧", @"爪", @"鞭", @"锤", @"回旋镖"]
+#define RECIPT_SECTION1_1_SUB           @[@[@"武器配方", @"家具配方", @"庭具配方"],\
+                                        @[@"防具锻造配方"],\
+                                        @[@"道具配方", @"家具配方", @"庭具配方", @"素材配方"],\
+                                        @[@"武器配方", @"家具配方", @"庭具配方", @"钓竿配方"],\
+                                        @[@"防具配方", @"家具配方"],\
+                                        @[@"肉料理配方", @"鱼料理配方", @"意面和米饭配方", @"甜点配方"],\
+                                        @[@"防具锻造配方"],\
+                                        @[@"防具锻造配方"],\
+                                        @[@"防具锻造配方"]]
+#define RECIPT_SECTION1_1_SUB_IMAGE     @[@[@"section1", @"section1", @"section1"],\
+                                        @[@"section2"],\
+                                        @[@"section3", @"section3", @"section3", @"section3"],\
+                                        @[@"section4", @"section4", @"section4", @"section4"],\
+                                        @[@"section5", @"section5"],\
+                                        @[@"section6", @"section6", @"section6", @"section6"],\
+                                        @[@"section2"],\
+                                        @[@"section2"],\
+                                        @[@"section2"]]
+//武器锻造－家具配方
+//武器锻造－庭具配方
+//防具锻造－防具锻造配方
+//道具锻造－道具配方
+//道具锻造－家具配方
+//道具锻造－庭具配方
+//道具锻造－素材配方
+//木工－武器配方
+//木工－家具配方
+//木工－庭具配方
+//木工－钓竿配方
+//裁缝－防具配方
+//裁缝－家具配方
+//烹饪－肉料理配方
+//烹饪－鱼料理配方
+//烹饪－意面和米饭配方
+//烹饪－甜点配方
+
 #endif /* Macros_h */

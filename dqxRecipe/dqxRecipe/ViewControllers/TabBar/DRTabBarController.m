@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "DRTabBarController.h"
 #import "DRCategoriesViewController.h"
+#import "DRSubCategoriesViewController.h"
+
 
 @interface DRTabBarController ()
 
@@ -25,7 +27,12 @@
         UINavigationController *cateNavigationController = [[UINavigationController alloc] initWithRootViewController:cateViewController];
         cateNavigationController.title = DRCategories;
         
-        [self setViewControllers:@[cateViewController]];
+        DRSubCategoriesViewController *cateViewController1 = [[DRSubCategoriesViewController alloc] init];
+        UINavigationController *cateNavigationController1 = [[UINavigationController alloc] initWithRootViewController:cateViewController1];
+        cateNavigationController1.title = DRCategories;
+        
+        [self setViewControllers:@[cateNavigationController, cateNavigationController1]];
+        
         [self setupTabBar];
     }
     return self;

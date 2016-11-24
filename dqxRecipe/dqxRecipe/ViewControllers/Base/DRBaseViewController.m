@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MBProgressHUD.h"
 #import "DRBaseViewController.h"
+#import "DRCategoriesViewController.h"
 
 @interface DRBaseViewController()
 
@@ -149,8 +150,17 @@
 #pragma mark - UI
 
 - (void)addNavigationBarLeftSearchItem {
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_search"] style:UIBarButtonItemStylePlain target:self action:@selector(showSearchingViewController)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_search"] style:UIBarButtonItemStylePlain target:self action:@selector(recipeButtonClicked)];
 }
 
+- (void)addNavigationBarRightMeItem {
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_me_normal"] style:UIBarButtonItemStylePlain target:self action:@selector(recipeButtonClicked)];
+}
+
+
+#pragma mark - Action
+- (void)recipeButtonClicked {
+    [self.navigationController pushViewController:[[DRCategoriesViewController alloc] init] animated:YES];
+}
 
 @end

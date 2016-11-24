@@ -16,6 +16,7 @@
 		58A556271DE5A712004D1625 /* DRRecipeCategoriesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A556261DE5A712004D1625 /* DRRecipeCategoriesCell.m */; };
 		58A5562B1DE5A7E2004D1625 /* DRBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A5562A1DE5A7E2004D1625 /* DRBaseCell.m */; };
 		58A5562E1DE5C8FB004D1625 /* DRRecipeCategoriesHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A5562D1DE5C8FB004D1625 /* DRRecipeCategoriesHeaderView.m */; };
+		58A556311DE6BA4D004D1625 /* DRSubCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A556301DE6BA4D004D1625 /* DRSubCategoriesViewController.m */; };
 		8478BF7F1DE4A3610052E351 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BF7E1DE4A3610052E351 /* main.m */; };
 		8478BF821DE4A3610052E351 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BF811DE4A3610052E351 /* AppDelegate.m */; };
 		8478BF851DE4A3610052E351 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BF841DE4A3610052E351 /* ViewController.m */; };
@@ -63,6 +64,8 @@
 		58A5562A1DE5A7E2004D1625 /* DRBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRBaseCell.m; path = CustomViews/Base/DRBaseCell.m; sourceTree = "<group>"; };
 		58A5562C1DE5C8E5004D1625 /* DRRecipeCategoriesHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRRecipeCategoriesHeaderView.h; path = CustomViews/RecipeCategories/DRRecipeCategoriesHeaderView.h; sourceTree = "<group>"; };
 		58A5562D1DE5C8FB004D1625 /* DRRecipeCategoriesHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRRecipeCategoriesHeaderView.m; path = CustomViews/RecipeCategories/DRRecipeCategoriesHeaderView.m; sourceTree = "<group>"; };
+		58A5562F1DE6BA2D004D1625 /* DRSubCategoriesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRSubCategoriesViewController.h; path = ViewControllers/RecipeCategories/DRSubCategoriesViewController.h; sourceTree = "<group>"; };
+		58A556301DE6BA4D004D1625 /* DRSubCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRSubCategoriesViewController.m; path = ViewControllers/RecipeCategories/DRSubCategoriesViewController.m; sourceTree = "<group>"; };
 		8478BF7A1DE4A3610052E351 /* dqxRecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dqxRecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8478BF7E1DE4A3610052E351 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8478BF801DE4A3610052E351 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 			children = (
 				58A5560C1DE5402F004D1625 /* DRCategoriesViewController.h */,
 				58A5560D1DE54074004D1625 /* DRCategoriesViewController.m */,
+				58A5562F1DE6BA2D004D1625 /* DRSubCategoriesViewController.h */,
+				58A556301DE6BA4D004D1625 /* DRSubCategoriesViewController.m */,
 			);
 			name = RecipeCategories;
 			sourceTree = "<group>";
@@ -456,6 +461,7 @@
 				8478BFB41DE4A8E50052E351 /* DRTabBarController.m in Sources */,
 				58A5560E1DE54074004D1625 /* DRCategoriesViewController.m in Sources */,
 				58A5562E1DE5C8FB004D1625 /* DRRecipeCategoriesHeaderView.m in Sources */,
+				58A556311DE6BA4D004D1625 /* DRSubCategoriesViewController.m in Sources */,
 				58A556121DE54114004D1625 /* DRBaseViewController.m in Sources */,
 				58A556201DE5A0BE004D1625 /* UIImage+Common.m in Sources */,
 				58A5562B1DE5A7E2004D1625 /* DRBaseCell.m in Sources */,
