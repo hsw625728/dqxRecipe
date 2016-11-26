@@ -26,7 +26,9 @@
     //设置导航栏的样式
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : DRNavigationBarTitleTextColor}];
     [[UINavigationBar appearance] setTintColor:DRLightGrayTextColor];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    //[[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setBarTintColor:DRNavigationBarTitleTextColor];
+    
     
     _window.rootViewController = [[DRTabBarController alloc] init];
     return YES;

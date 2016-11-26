@@ -8,6 +8,8 @@
 
 #ifndef Constants_h
 #define Constants_h
+#pragma mark - UISize
+#define DRTableViewHigh 48
 
 #pragma mark - UIColor
 

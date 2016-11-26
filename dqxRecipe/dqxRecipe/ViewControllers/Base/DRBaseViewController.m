@@ -34,11 +34,13 @@
     self.view.backgroundColor = DRViewControllerBGColor;
     // 设置标题栏不能覆盖下面 ViewController 的内容
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars = NO;
+    self.modalPresentationCapturesStatusBarAppearance = NO;
+    self.automaticallyAdjustsScrollViewInsets = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    //    self.navigationController.navigationBar.hidden = _hideNavigationBar;
     self.navigationController.navigationBarHidden = _hideNavigationBar;
 }
 
@@ -154,7 +156,7 @@
 }
 
 - (void)addNavigationBarRightMeItem {
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_me_normal"] style:UIBarButtonItemStylePlain target:self action:@selector(recipeButtonClicked)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_search"] style:UIBarButtonItemStylePlain target:self action:@selector(recipeButtonClicked)];
 }
 
 

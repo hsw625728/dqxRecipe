@@ -35,6 +35,7 @@
 
 //添加导航栏左侧搜索图标
 -(void)addNavigationBarLeftSearchItem;
+-(void)addNavigationBarRightMeItem;
 
 @end
 

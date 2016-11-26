@@ -22,7 +22,7 @@ NSString *const kRecipeCategoriesCellID = @"DRRecipeCategoriesCellID";
 @implementation DRRecipeCategoriesCell
 
 + (CGFloat)cellHeight {
-    return 44;
+    return DRTableViewHigh;
 }
 
 - (void)prepareForReuse {
@@ -73,7 +73,7 @@ NSString *const kRecipeCategoriesCellID = @"DRRecipeCategoriesCellID";
         imageView.contentMode = UIViewContentModeCenter;
         [self.contentView addSubview:imageView];
         [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.height.equalTo(@44);
+            make.width.height.equalTo(@DRTableViewHigh);
             make.top.left.equalTo(self.contentView);
         }];
         

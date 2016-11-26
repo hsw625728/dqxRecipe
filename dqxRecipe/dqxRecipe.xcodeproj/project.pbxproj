@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5873BF091DE8229E005B6BD5 /* DRDetailMaterialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5873BF081DE8229E005B6BD5 /* DRDetailMaterialCell.m */; };
+		5873BF0B1DE82483005B6BD5 /* DRDetailMaterialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5873BF0A1DE82483005B6BD5 /* DRDetailMaterialCell.xib */; };
+		5873BF0D1DE82848005B6BD5 /* DRDetailMaterialHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5873BF0C1DE82848005B6BD5 /* DRDetailMaterialHeaderCell.xib */; };
+		5873BF101DE83977005B6BD5 /* DRDetailMaterialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5873BF0F1DE83977005B6BD5 /* DRDetailMaterialViewController.m */; };
 		58A5560E1DE54074004D1625 /* DRCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A5560D1DE54074004D1625 /* DRCategoriesViewController.m */; };
 		58A556121DE54114004D1625 /* DRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A556111DE54114004D1625 /* DRBaseViewController.m */; };
 		58A556161DE55BF0004D1625 /* Pods.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 58A556141DE55BF0004D1625 /* Pods.debug.xcconfig */; };
@@ -46,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5873BF071DE82280005B6BD5 /* DRDetailMaterialCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRDetailMaterialCell.h; path = CustomViews/RecipeCategories/Cells/DRDetailMaterialCell.h; sourceTree = "<group>"; };
+		5873BF081DE8229E005B6BD5 /* DRDetailMaterialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRDetailMaterialCell.m; path = CustomViews/RecipeCategories/Cells/DRDetailMaterialCell.m; sourceTree = "<group>"; };
+		5873BF0A1DE82483005B6BD5 /* DRDetailMaterialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DRDetailMaterialCell.xib; path = CustomViews/RecipeCategories/Cells/DRDetailMaterialCell.xib; sourceTree = "<group>"; };
+		5873BF0C1DE82848005B6BD5 /* DRDetailMaterialHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DRDetailMaterialHeaderCell.xib; path = CustomViews/RecipeCategories/Cells/DRDetailMaterialHeaderCell.xib; sourceTree = "<group>"; };
+		5873BF0E1DE83963005B6BD5 /* DRDetailMaterialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRDetailMaterialViewController.h; path = ViewControllers/RecipeCategories/DRDetailMaterialViewController.h; sourceTree = "<group>"; };
+		5873BF0F1DE83977005B6BD5 /* DRDetailMaterialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRDetailMaterialViewController.m; path = ViewControllers/RecipeCategories/DRDetailMaterialViewController.m; sourceTree = "<group>"; };
 		58A556091DE53CBC004D1625 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Common/Headers/Constants.h; sourceTree = "<group>"; };
 		58A5560A1DE53DC5004D1625 /* dqxRecipe.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dqxRecipe.pch; sourceTree = "<group>"; };
 		58A5560C1DE5402F004D1625 /* DRCategoriesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRCategoriesViewController.h; path = ViewControllers/RecipeCategories/DRCategoriesViewController.h; sourceTree = "<group>"; };
@@ -137,6 +147,8 @@
 				58A5560D1DE54074004D1625 /* DRCategoriesViewController.m */,
 				58A5562F1DE6BA2D004D1625 /* DRSubCategoriesViewController.h */,
 				58A556301DE6BA4D004D1625 /* DRSubCategoriesViewController.m */,
+				5873BF0E1DE83963005B6BD5 /* DRDetailMaterialViewController.h */,
+				5873BF0F1DE83977005B6BD5 /* DRDetailMaterialViewController.m */,
 			);
 			name = RecipeCategories;
 			sourceTree = "<group>";
@@ -200,6 +212,10 @@
 			children = (
 				58A556251DE5A6FE004D1625 /* DRRecipeCategoriesCell.h */,
 				58A556261DE5A712004D1625 /* DRRecipeCategoriesCell.m */,
+				5873BF071DE82280005B6BD5 /* DRDetailMaterialCell.h */,
+				5873BF081DE8229E005B6BD5 /* DRDetailMaterialCell.m */,
+				5873BF0A1DE82483005B6BD5 /* DRDetailMaterialCell.xib */,
+				5873BF0C1DE82848005B6BD5 /* DRDetailMaterialHeaderCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -412,9 +428,11 @@
 			files = (
 				8478BF8D1DE4A3610052E351 /* LaunchScreen.storyboard in Resources */,
 				58A556171DE55BF0004D1625 /* Pods.release.xcconfig in Resources */,
+				5873BF0D1DE82848005B6BD5 /* DRDetailMaterialHeaderCell.xib in Resources */,
 				58A556161DE55BF0004D1625 /* Pods.debug.xcconfig in Resources */,
 				8478BF8A1DE4A3610052E351 /* Assets.xcassets in Resources */,
 				8478BF881DE4A3610052E351 /* Main.storyboard in Resources */,
+				5873BF0B1DE82483005B6BD5 /* DRDetailMaterialCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +484,9 @@
 				58A556201DE5A0BE004D1625 /* UIImage+Common.m in Sources */,
 				58A5562B1DE5A7E2004D1625 /* DRBaseCell.m in Sources */,
 				8478BF821DE4A3610052E351 /* AppDelegate.m in Sources */,
+				5873BF091DE8229E005B6BD5 /* DRDetailMaterialCell.m in Sources */,
 				8478BF7F1DE4A3610052E351 /* main.m in Sources */,
+				5873BF101DE83977005B6BD5 /* DRDetailMaterialViewController.m in Sources */,
 				58A556271DE5A712004D1625 /* DRRecipeCategoriesCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

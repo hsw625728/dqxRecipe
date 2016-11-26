@@ -14,4 +14,5 @@
 #pragma mark - Header
 #import "Constants.h"
 #import "Macros.h"
+#import <UIKit/UITableViewCell.h>
 #endif /* dqxRecipe_pch */

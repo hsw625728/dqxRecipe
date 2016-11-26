@@ -13,6 +13,7 @@
 #import "DRRecipeCategoriesCell.h"
 #import "DRRecipeCategoriesHeaderView.h"
 #import "View+MASAdditions.h"
+#import "DRDetailMaterialViewController.h"
 
 @interface DRSubCategoriesViewController() <UITableViewDataSource, UITableViewDelegate>
 
@@ -41,16 +42,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    self.edgesForExtendedLayout = UIRectEdgeAll;
     
     UIImageView *titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nav_home_title"]];
     self.navigationItem.titleView = titleView;
     
-    [self addNavigationBarLeftSearchItem];
+    //[self addNavigationBarLeftSearchItem];
     [self setupViews];
     
-    
+    //导航栏设置
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor clearColor]] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     
@@ -243,13 +242,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    if (indexPath.section == 1 && indexPath.row == 1)
-    {
-        //[self presentLoginOptsViewController];
-        return;
-    }
+    DRDetailMaterialViewController *materialController = [[DRDetailMaterialViewController alloc] init];
+    [materialController setItemName:rowTitles[indexPath.section][indexPath.row]];
+    [self.navigationController pushViewController:materialController animated:YES];
     
-    //[self.navigationController pushViewController:[[DRCategoriesViewController alloc] init] animated:YES];
 }
 
 
