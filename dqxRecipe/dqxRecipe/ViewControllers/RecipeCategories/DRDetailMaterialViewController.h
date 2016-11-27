@@ -9,10 +9,10 @@
 #ifndef DRDetailMaterialViewController_h
 #define DRDetailMaterialViewController_h
 
-
-#endif /* DRDetailMaterialViewController_h */
 #import "DRBaseViewController.h"
 
 @interface DRDetailMaterialViewController : DRBaseViewController
 @property (strong, nonatomic) NSString *itemName;
 @end
+
+#endif /* DRDetailMaterialViewController_h */

@@ -10,6 +10,7 @@
 #import "DRTabBarController.h"
 #import "DRCategoriesViewController.h"
 #import "DRSubCategoriesViewController.h"
+#import "DRSearchViewController.h"
 
 
 @interface DRTabBarController ()
@@ -27,11 +28,19 @@
         UINavigationController *cateNavigationController = [[UINavigationController alloc] initWithRootViewController:cateViewController];
         cateNavigationController.title = DRCategories;
         
-        DRSubCategoriesViewController *cateViewController1 = [[DRSubCategoriesViewController alloc] init];
+        DRSearchViewController *cateViewController1 = [[DRSearchViewController alloc] init];
         UINavigationController *cateNavigationController1 = [[UINavigationController alloc] initWithRootViewController:cateViewController1];
-        cateNavigationController1.title = DRCategories;
+        cateNavigationController1.title = DRTabTitle1;
         
-        [self setViewControllers:@[cateNavigationController, cateNavigationController1]];
+        DRCategoriesViewController *cateViewController2 = [[DRCategoriesViewController alloc] init];
+        UINavigationController *cateNavigationController2 = [[UINavigationController alloc] initWithRootViewController:cateViewController2];
+        cateNavigationController2.title = DRTabTitle2;
+        
+        DRCategoriesViewController *cateViewController3 = [[DRCategoriesViewController alloc] init];
+        UINavigationController *cateNavigationController3 = [[UINavigationController alloc] initWithRootViewController:cateViewController3];
+        cateNavigationController3.title = DRTabTitle3;
+        
+        [self setViewControllers:@[cateNavigationController, cateNavigationController1, cateNavigationController2, cateNavigationController3]];
         
         [self setupTabBar];
     }
