@@ -106,7 +106,7 @@ NSString *const kDRRecipeSearchCellID = @"kDRRecipeSearchCellID";
     //[_coverView mlb_sd_setImageWithURL:@"section2"/*item.iconName*/ placeholderImageName:@"section1"];
     _coverView.image = [UIImage imageNamed:item.iconName];
     _titleLabel.text = item.itemName;
-    _contentLabel.text = item.iconName;
+    _contentLabel.text = @"点击查看制作所需素材";
 }
 
 @end
