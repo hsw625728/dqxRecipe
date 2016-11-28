@@ -11,6 +11,8 @@
 #import "DRCategoriesViewController.h"
 #import "DRSubCategoriesViewController.h"
 #import "DRSearchViewController.h"
+#import "DRMaterialIemViewController.h"
+#import "DRRecipeHistoryViewController.h"
 
 
 @interface DRTabBarController ()
@@ -28,19 +30,15 @@
         UINavigationController *cateNavigationController = [[UINavigationController alloc] initWithRootViewController:cateViewController];
         cateNavigationController.title = DRCategories;
         
-        DRSearchViewController *cateViewController1 = [[DRSearchViewController alloc] init];
+        DRMaterailItemViewController *cateViewController1 = [[DRMaterailItemViewController alloc] init];
         UINavigationController *cateNavigationController1 = [[UINavigationController alloc] initWithRootViewController:cateViewController1];
-        cateNavigationController1.title = DRTabTitle1;
+        cateNavigationController1.title = DRMaterialItem;
         
-        DRCategoriesViewController *cateViewController2 = [[DRCategoriesViewController alloc] init];
-        UINavigationController *cateNavigationController2 = [[UINavigationController alloc] initWithRootViewController:cateViewController2];
-        cateNavigationController2.title = DRTabTitle2;
-        
-        DRCategoriesViewController *cateViewController3 = [[DRCategoriesViewController alloc] init];
+        DRRecipeHistoryViewController *cateViewController3 = [[DRRecipeHistoryViewController alloc] init];
         UINavigationController *cateNavigationController3 = [[UINavigationController alloc] initWithRootViewController:cateViewController3];
-        cateNavigationController3.title = DRTabTitle3;
+        cateNavigationController3.title = DRRecipeHistory;
         
-        [self setViewControllers:@[cateNavigationController, cateNavigationController1, cateNavigationController2, cateNavigationController3]];
+        [self setViewControllers:@[cateNavigationController, cateNavigationController1, cateNavigationController3]];
         
         [self setupTabBar];
     }

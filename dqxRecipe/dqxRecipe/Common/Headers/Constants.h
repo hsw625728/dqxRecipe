@@ -29,10 +29,9 @@
 #define DRLightGrayTextColor [UIColor colorWithWhite:198 / 255.0 alpha:1]// #C6C6C6
 
 //Title
-#define DRCategories @"配方浏览"
-#define DRTabTitle1 @"搜索配方"
-#define DRTabTitle2 @"素材计算"
-#define DRTabTitle3 @"近期浏览"
+#define DRCategories @"配方分类"
+#define DRMaterialItem @"素材列表"
+#define DRRecipeHistory @"近期浏览"
 
 // Hint
 #define BAD_NETWORK                             @"网络连接失败"

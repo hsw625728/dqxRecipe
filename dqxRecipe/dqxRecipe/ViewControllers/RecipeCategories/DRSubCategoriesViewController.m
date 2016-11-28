@@ -246,6 +246,20 @@
     [materialController setItemName:rowTitles[indexPath.section][indexPath.row]];
     [self.navigationController pushViewController:materialController animated:YES];
     
+    
+    NSMutableArray *history;
+    NSString *docPath =  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *path = [docPath stringByAppendingPathComponent:@"RecipeHistory"];
+    
+    history = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    if (ISNULL(history))
+        history = [[NSMutableArray alloc] init];
+    
+    [history addObject:rowTitles[indexPath.section][indexPath.row]];
+    if (history.count > 60)
+        [history removeObjectAtIndex:0];
+    
+    [NSKeyedArchiver archiveRootObject:history toFile:path];
 }
 
 

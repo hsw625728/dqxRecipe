@@ -42,11 +42,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIImageView *titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_search"]];
-    self.navigationItem.titleView = titleView;
+    self.navigationItem.title = DRCategories;
     
     [self addNavigationBarLeftSearchItem];
-    [self addNavigationBarRightMeItem];
+    //[self addNavigationBarRightMeItem];
     [self setupViews];
     
     //设置导航栏
@@ -66,11 +65,11 @@
                   @[@"武器配方", @"家具配方", @"庭具配方", @"钓竿配方"],
                   @[@"防具配方", @"家具配方"],
                   @[@"肉料理配方", @"鱼料理配方", @"意面和米饭配方", @"甜点配方"]];
-    rowImageNames = @[@[@"section1", @"section1", @"section1"],
-                      @[@"section2"],
-                      @[@"section3", @"section3", @"section3", @"section3"],
-                      @[@"section4", @"section4", @"section4", @"section4"],
-                      @[@"section5", @"section5"],
+    rowImageNames = @[@[@"Icon-毁灭者", @"Icon-天文望远镜·金", @"Icon-天文仪·金"],
+                      @[@"Icon-小鬼圆盾"],
+                      @[@"Icon-白金锻造锤", @"section3", @"section3", @"Icon-彩虹宝珠"],
+                      @[@"Icon-魔萌短杖", @"section4", @"section4", @"section4"],
+                      @[@"Icon-知识长袍上装", @"section5"],
                       @[@"section6", @"section6", @"section6", @"section6"]];
 }
 

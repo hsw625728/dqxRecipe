@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MBProgressHUD.h"
 #import "DRBaseViewController.h"
-#import "DRCategoriesViewController.h"
+#import "DRSearchViewController.h"
 
 @interface DRBaseViewController()
 
@@ -162,7 +162,7 @@
 
 #pragma mark - Action
 - (void)recipeButtonClicked {
-    [self.navigationController pushViewController:[[DRCategoriesViewController alloc] init] animated:YES];
+    [self.navigationController pushViewController:[[DRSearchViewController alloc] init] animated:YES];
 }
 
 @end

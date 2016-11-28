@@ -62,7 +62,7 @@ NSString *const kDRRecipeSearchCellID = @"kDRRecipeSearchCellID";
         imageView.backgroundColor = [UIColor whiteColor];
         [self.contentView addSubview:imageView];
         [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.sizeOffset(CGSizeMake(65, 48));
+            make.size.sizeOffset(CGSizeMake(48, 48));
             make.centerY.equalTo(self.contentView);
             make.left.equalTo(self.contentView).offset(8);
         }];
