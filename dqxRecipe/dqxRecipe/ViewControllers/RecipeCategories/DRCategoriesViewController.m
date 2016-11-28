@@ -54,6 +54,7 @@
     
     [self initDatas];
     [self setupViews];
+    
 }
 #pragma mark - Private Method
 
@@ -168,8 +169,5 @@
     [subview setIndex:((int)((indexPath.section+1)*10 + (indexPath.row+1)))];
     [self.navigationController pushViewController:subview animated:YES];
 }
-
-
-
 
 @end

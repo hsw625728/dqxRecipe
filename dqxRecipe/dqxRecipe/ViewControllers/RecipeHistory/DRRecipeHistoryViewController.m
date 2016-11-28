@@ -71,7 +71,7 @@
     history = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
     
     if (ISNULL(history))
-        history = [[NSMutableArray alloc] initWithObjects:@"(｡◕ˇ∀ˇ◕）近期没有浏览任何数据╮(╯▽╰)╭", nil];
+        history = [[NSMutableArray alloc] initWithObjects:@"近期没有浏览任何数据╮(╯▽╰)╭", nil];
                    //addObject:@"(｡◕ˇ∀ˇ◕）近期没有浏览任何数据╮(╯▽╰)╭"];
     
     NSArray *list;
