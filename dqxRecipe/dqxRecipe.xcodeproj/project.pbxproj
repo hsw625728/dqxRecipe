@@ -451,7 +451,7 @@
 				TargetAttributes = {
 					8478BF791DE4A3610052E351 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 62JG8Z6Y54;
+						DevelopmentTeam = 887CVK63XR;
 						ProvisioningStyle = Automatic;
 					};
 					8478BF921DE4A3610052E351 = {
@@ -735,7 +735,7 @@
 			baseConfigurationReference = 90801B85F98F4F31E78DEC1C /* Pods-dqxRecipe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 62JG8Z6Y54;
+				DEVELOPMENT_TEAM = 887CVK63XR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks",
@@ -776,7 +776,7 @@
 			baseConfigurationReference = A55A128C9FC914D1DB984382 /* Pods-dqxRecipe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 62JG8Z6Y54;
+				DEVELOPMENT_TEAM = 887CVK63XR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks",

@@ -50,6 +50,9 @@
     self.bannerView.rootViewController = self;
     [self.bannerView loadRequest:[GADRequest request]];
     
+    //[self.view addSubview:_bannerView];
+    
+    //self.navigationItem.titleView = _bannerView;
     self.navigationItem.title = DRCategories;
     
     [self addNavigationBarLeftSearchItem];
@@ -62,6 +65,7 @@
     
     [self initDatas];
     [self setupViews];
+    [_tableView addSubview:_bannerView];
     
 }
 #pragma mark - Private Method
