@@ -13,11 +13,12 @@
 #import "DRRecipeCategoriesHeaderView.h"
 #import "View+MASAdditions.h"
 #import "DRSubCategoriesViewController.h"
+#import "GoogleMobileAds/GoogleMobileAds.h"
 
 @interface DRCategoriesViewController() <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
-
+@property (strong, nonatomic) GADBannerView  *bannerView;
 @end
 
 @implementation DRCategoriesViewController{
@@ -41,6 +42,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //Google AdMob
+    _bannerView = [[GADBannerView alloc] initWithFrame:CGRectMake(0.0, 430.0, self.view.frame.size.width, 50.0)];
+    NSLog(@"Google Mobile Ads SDK version: %@", [GADRequest sdkVersion]);
+    self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+    self.bannerView.rootViewController = self;
+    [self.bannerView loadRequest:[GADRequest request]];
     
     self.navigationItem.title = DRCategories;
     

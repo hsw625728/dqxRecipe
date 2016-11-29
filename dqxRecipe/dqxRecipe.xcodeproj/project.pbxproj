@@ -18,7 +18,6 @@
 		5873BF361DEC3C77005B6BD5 /* DRRecipeHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5873BF351DEC3C77005B6BD5 /* DRRecipeHistoryViewController.m */; };
 		58A5560E1DE54074004D1625 /* DRCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A5560D1DE54074004D1625 /* DRCategoriesViewController.m */; };
 		58A556121DE54114004D1625 /* DRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A556111DE54114004D1625 /* DRBaseViewController.m */; };
-		58A5561C1DE58FE2004D1625 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A5561B1DE58FE2004D1625 /* libPods.a */; };
 		58A556201DE5A0BE004D1625 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A5561F1DE5A0BE004D1625 /* UIImage+Common.m */; };
 		58A556271DE5A712004D1625 /* DRRecipeCategoriesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A556261DE5A712004D1625 /* DRRecipeCategoriesCell.m */; };
 		58A5562B1DE5A7E2004D1625 /* DRBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A5562A1DE5A7E2004D1625 /* DRBaseCell.m */; };
@@ -55,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		35C4BDA3CA34EA0C1315FCBE /* libPods-dqxRecipe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dqxRecipe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		580AEFD11DEDA5E4009C2682 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		5873BF071DE82280005B6BD5 /* DRDetailMaterialCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRDetailMaterialCell.h; path = CustomViews/RecipeCategories/Cells/DRDetailMaterialCell.h; sourceTree = "<group>"; };
 		5873BF081DE8229E005B6BD5 /* DRDetailMaterialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRDetailMaterialCell.m; path = CustomViews/RecipeCategories/Cells/DRDetailMaterialCell.m; sourceTree = "<group>"; };
 		5873BF0A1DE82483005B6BD5 /* DRDetailMaterialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DRDetailMaterialCell.xib; path = CustomViews/RecipeCategories/Cells/DRDetailMaterialCell.xib; sourceTree = "<group>"; };
@@ -77,7 +77,6 @@
 		58A5560D1DE54074004D1625 /* DRCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRCategoriesViewController.m; path = ViewControllers/RecipeCategories/DRCategoriesViewController.m; sourceTree = "<group>"; };
 		58A556101DE540FB004D1625 /* DRBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRBaseViewController.h; path = ViewControllers/Base/DRBaseViewController.h; sourceTree = "<group>"; };
 		58A556111DE54114004D1625 /* DRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRBaseViewController.m; path = ViewControllers/Base/DRBaseViewController.m; sourceTree = "<group>"; };
-		58A5561B1DE58FE2004D1625 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		58A5561E1DE5A0BE004D1625 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Common.h"; path = "Common/Categories/UIImage+Common.h"; sourceTree = "<group>"; };
 		58A5561F1DE5A0BE004D1625 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Common.m"; path = "Common/Categories/UIImage+Common.m"; sourceTree = "<group>"; };
 		58A556211DE5A525004D1625 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = Common/Headers/Macros.h; sourceTree = "<group>"; };
@@ -116,7 +115,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58A5561C1DE58FE2004D1625 /* libPods.a in Frameworks */,
 				FE03AA3C1E79395FCF03974C /* libPods-dqxRecipe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,7 +233,7 @@
 		58A5561A1DE58FE2004D1625 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				58A5561B1DE58FE2004D1625 /* libPods.a */,
+				580AEFD11DEDA5E4009C2682 /* GoogleMobileAds.framework */,
 				35C4BDA3CA34EA0C1315FCBE /* libPods-dqxRecipe.a */,
 			);
 			name = Frameworks;
@@ -738,6 +736,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 62JG8Z6Y54;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks",
+				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = dqxRecipe/dqxRecipe.pch;
@@ -761,12 +763,8 @@
 				INFOPLIST_FILE = dqxRecipe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "\"${SRCROOT}/../build/Debug-iphoneos";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-l\"MBProgressHUD\"",
-					"-l\"Masonry\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
 				PODS_ROOT_DELETE = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.mengyoutu.dqxRecipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -779,6 +777,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 62JG8Z6Y54;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks",
+				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = dqxRecipe/dqxRecipe.pch;
@@ -802,12 +804,8 @@
 				INFOPLIST_FILE = dqxRecipe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "\U0003";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-l\"MBProgressHUD\"",
-					"-l\"Masonry\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
 				PODS_ROOT_DELETE = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.mengyoutu.dqxRecipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -43,8 +43,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIImageView *titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nav_home_title"]];
-    self.navigationItem.titleView = titleView;
+    //self.navigationItem.title = @"";
     
     //[self addNavigationBarLeftSearchItem];
     [self setupViews];

@@ -89,6 +89,7 @@ DEPENDENCIES:
   - Firebase/AdMob
   - Firebase/Core
   - GMCPagingScrollView
+  - Google-Mobile-Ads-SDK
   - JTSImageViewController
   - KMNavigationBarTransition
   - Mantle
@@ -142,6 +143,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZYCornerRadius: 485a8e9304d16d1620641054a08b9c0f55dd512c
 
-PODFILE CHECKSUM: 16f4651317d9b6439caa4bca86440876b8e374c0
+PODFILE CHECKSUM: 5ab659d09501269b4f1c8c137a6f09bbcfd9a53c
 
 COCOAPODS: 1.1.1
