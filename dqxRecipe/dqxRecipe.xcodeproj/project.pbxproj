@@ -18,8 +18,6 @@
 		5873BF361DEC3C77005B6BD5 /* DRRecipeHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5873BF351DEC3C77005B6BD5 /* DRRecipeHistoryViewController.m */; };
 		58A5560E1DE54074004D1625 /* DRCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A5560D1DE54074004D1625 /* DRCategoriesViewController.m */; };
 		58A556121DE54114004D1625 /* DRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A556111DE54114004D1625 /* DRBaseViewController.m */; };
-		58A556161DE55BF0004D1625 /* Pods.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 58A556141DE55BF0004D1625 /* Pods.debug.xcconfig */; };
-		58A556171DE55BF0004D1625 /* Pods.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 58A556151DE55BF0004D1625 /* Pods.release.xcconfig */; };
 		58A5561C1DE58FE2004D1625 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A5561B1DE58FE2004D1625 /* libPods.a */; };
 		58A556201DE5A0BE004D1625 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A5561F1DE5A0BE004D1625 /* UIImage+Common.m */; };
 		58A556271DE5A712004D1625 /* DRRecipeCategoriesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A556261DE5A712004D1625 /* DRRecipeCategoriesCell.m */; };
@@ -35,6 +33,7 @@
 		8478BF981DE4A3610052E351 /* dqxRecipeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BF971DE4A3610052E351 /* dqxRecipeTests.m */; };
 		8478BFA31DE4A3610052E351 /* dqxRecipeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BFA21DE4A3610052E351 /* dqxRecipeUITests.m */; };
 		8478BFB41DE4A8E50052E351 /* DRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BFB31DE4A8E50052E351 /* DRTabBarController.m */; };
+		FE03AA3C1E79395FCF03974C /* libPods-dqxRecipe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C4BDA3CA34EA0C1315FCBE /* libPods-dqxRecipe.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35C4BDA3CA34EA0C1315FCBE /* libPods-dqxRecipe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dqxRecipe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5873BF071DE82280005B6BD5 /* DRDetailMaterialCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRDetailMaterialCell.h; path = CustomViews/RecipeCategories/Cells/DRDetailMaterialCell.h; sourceTree = "<group>"; };
 		5873BF081DE8229E005B6BD5 /* DRDetailMaterialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRDetailMaterialCell.m; path = CustomViews/RecipeCategories/Cells/DRDetailMaterialCell.m; sourceTree = "<group>"; };
 		5873BF0A1DE82483005B6BD5 /* DRDetailMaterialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DRDetailMaterialCell.xib; path = CustomViews/RecipeCategories/Cells/DRDetailMaterialCell.xib; sourceTree = "<group>"; };
@@ -77,8 +77,6 @@
 		58A5560D1DE54074004D1625 /* DRCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRCategoriesViewController.m; path = ViewControllers/RecipeCategories/DRCategoriesViewController.m; sourceTree = "<group>"; };
 		58A556101DE540FB004D1625 /* DRBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRBaseViewController.h; path = ViewControllers/Base/DRBaseViewController.h; sourceTree = "<group>"; };
 		58A556111DE54114004D1625 /* DRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRBaseViewController.m; path = ViewControllers/Base/DRBaseViewController.m; sourceTree = "<group>"; };
-		58A556141DE55BF0004D1625 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		58A556151DE55BF0004D1625 /* Pods.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		58A5561B1DE58FE2004D1625 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		58A5561E1DE5A0BE004D1625 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Common.h"; path = "Common/Categories/UIImage+Common.h"; sourceTree = "<group>"; };
 		58A5561F1DE5A0BE004D1625 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Common.m"; path = "Common/Categories/UIImage+Common.m"; sourceTree = "<group>"; };
@@ -109,6 +107,8 @@
 		8478BFA41DE4A3610052E351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8478BFB21DE4A8890052E351 /* DRTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRTabBarController.h; path = ViewControllers/TabBar/DRTabBarController.h; sourceTree = "<group>"; };
 		8478BFB31DE4A8E50052E351 /* DRTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRTabBarController.m; path = ViewControllers/TabBar/DRTabBarController.m; sourceTree = "<group>"; };
+		90801B85F98F4F31E78DEC1C /* Pods-dqxRecipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dqxRecipe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dqxRecipe/Pods-dqxRecipe.debug.xcconfig"; sourceTree = "<group>"; };
+		A55A128C9FC914D1DB984382 /* Pods-dqxRecipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dqxRecipe.release.xcconfig"; path = "Pods/Target Support Files/Pods-dqxRecipe/Pods-dqxRecipe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58A5561C1DE58FE2004D1625 /* libPods.a in Frameworks */,
+				FE03AA3C1E79395FCF03974C /* libPods-dqxRecipe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,8 +226,8 @@
 		58A556131DE55B56004D1625 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				58A556141DE55BF0004D1625 /* Pods.debug.xcconfig */,
-				58A556151DE55BF0004D1625 /* Pods.release.xcconfig */,
+				90801B85F98F4F31E78DEC1C /* Pods-dqxRecipe.debug.xcconfig */,
+				A55A128C9FC914D1DB984382 /* Pods-dqxRecipe.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -235,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				58A5561B1DE58FE2004D1625 /* libPods.a */,
+				35C4BDA3CA34EA0C1315FCBE /* libPods-dqxRecipe.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -388,10 +390,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8478BFA71DE4A3610052E351 /* Build configuration list for PBXNativeTarget "dqxRecipe" */;
 			buildPhases = (
+				4616FC87C4D8C820845F0F88 /* [CP] Check Pods Manifest.lock */,
 				8478BF761DE4A3610052E351 /* Sources */,
 				8478BF771DE4A3610052E351 /* Frameworks */,
 				8478BF781DE4A3610052E351 /* Resources */,
-				58A556181DE58E60004D1625 /* Embed Pods Frameworks */,
+				58A556181DE58E60004D1625 /* [CP] Embed Pods Frameworks */,
+				E06A0C376EE0402596277CC6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -492,9 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8478BF8D1DE4A3610052E351 /* LaunchScreen.storyboard in Resources */,
-				58A556171DE55BF0004D1625 /* Pods.release.xcconfig in Resources */,
 				5873BF0D1DE82848005B6BD5 /* DRDetailMaterialHeaderCell.xib in Resources */,
-				58A556161DE55BF0004D1625 /* Pods.debug.xcconfig in Resources */,
 				8478BF8A1DE4A3610052E351 /* Assets.xcassets in Resources */,
 				8478BF881DE4A3610052E351 /* Main.storyboard in Resources */,
 				5873BF0B1DE82483005B6BD5 /* DRDetailMaterialCell.xib in Resources */,
@@ -518,19 +520,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		58A556181DE58E60004D1625 /* Embed Pods Frameworks */ = {
+		4616FC87C4D8C820845F0F88 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods/Pods-frameworks.sh\"";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		58A556181DE58E60004D1625 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dqxRecipe/Pods-dqxRecipe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E06A0C376EE0402596277CC6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dqxRecipe/Pods-dqxRecipe-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -702,6 +734,7 @@
 		};
 		8478BFA81DE4A3610052E351 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90801B85F98F4F31E78DEC1C /* Pods-dqxRecipe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 62JG8Z6Y54;
@@ -734,7 +767,7 @@
 					"-l\"MBProgressHUD\"",
 					"-l\"Masonry\"",
 				);
-				PODS_ROOT = ../Pods;
+				PODS_ROOT_DELETE = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.mengyoutu.dqxRecipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -742,6 +775,7 @@
 		};
 		8478BFA91DE4A3610052E351 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A55A128C9FC914D1DB984382 /* Pods-dqxRecipe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 62JG8Z6Y54;
@@ -774,7 +808,7 @@
 					"-l\"MBProgressHUD\"",
 					"-l\"Masonry\"",
 				);
-				PODS_ROOT = ../Pods;
+				PODS_ROOT_DELETE = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.mengyoutu.dqxRecipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
