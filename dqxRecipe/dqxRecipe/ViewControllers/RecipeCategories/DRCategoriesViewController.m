@@ -42,17 +42,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    //Google AdMob
-    _bannerView = [[GADBannerView alloc] initWithFrame:CGRectMake(0.0, 430.0, self.view.frame.size.width, 50.0)];
-    NSLog(@"Google Mobile Ads SDK version: %@", [GADRequest sdkVersion]);
-    self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
-    self.bannerView.rootViewController = self;
-    [self.bannerView loadRequest:[GADRequest request]];
-    
-    //[self.view addSubview:_bannerView];
-    
-    //self.navigationItem.titleView = _bannerView;
     self.navigationItem.title = DRCategories;
     
     [self addNavigationBarLeftSearchItem];
@@ -65,12 +54,34 @@
     
     [self initDatas];
     [self setupViews];
-    [_tableView addSubview:_bannerView];
     
+    //首页最下方常驻的Google广告
+    _bannerView = [[GADBannerView alloc] initWithFrame:CGRectMake(0.0,
+                                                                  self.view.frame.size.height -
+                                                                  GAD_SIZE_320x50.height,
+                                                                  self.view.frame.size.width,
+                                                                  GAD_SIZE_320x50.height)];
+    NSLog(@"Google Mobile Ads SDK version: %@", [GADRequest sdkVersion]);
+    //1号横幅广告位
+    self.bannerView.adUnitID = @"ca-app-pub-9308902363520222/7218630190";
+    //Google AdMob提供的测试广告ID
+    //self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+    self.bannerView.rootViewController = self;
+    GADRequest *request = [GADRequest request];
+    request.testDevices = @[ @"66fc40441247f9df253bbcaa32f528bb" ];
+    [self.bannerView loadRequest:request];
+    
+    [self.view addSubview:_bannerView];
+    [_bannerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(@(self.view.frame.size.width));
+        make.height.equalTo(@50);
+        make.bottom.left.equalTo(self.view);
+    }];
 }
 #pragma mark - Private Method
 
 - (void)initDatas {
+    //加载分类标题数据
     sectionTitles = @[@"武器锻造", @"防具锻造", @"道具锻造", @"木工", @"裁缝", @"烹饪"];
     rowTitles = @[@[@"武器配方", @"家具配方", @"庭具配方"],
                   @[@"防具锻造配方"],
@@ -85,6 +96,7 @@
                       @[@"Icon-知识长袍上装", @"section5"],
                       @[@"section6", @"section6", @"section6", @"section6"]];
 }
+
 
 - (void)setupViews {
     //_headerView = [[MLBUserHomeHeaderView alloc] initWithUserType:MLBUserTypeMe];

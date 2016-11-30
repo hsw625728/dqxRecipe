@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580AEFD61DEEAEC1009C2682 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 580AEFD51DEEAEC1009C2682 /* GoogleService-Info.plist */; };
 		5873BF091DE8229E005B6BD5 /* DRDetailMaterialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5873BF081DE8229E005B6BD5 /* DRDetailMaterialCell.m */; };
 		5873BF0B1DE82483005B6BD5 /* DRDetailMaterialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5873BF0A1DE82483005B6BD5 /* DRDetailMaterialCell.xib */; };
 		5873BF0D1DE82848005B6BD5 /* DRDetailMaterialHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5873BF0C1DE82848005B6BD5 /* DRDetailMaterialHeaderCell.xib */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		35C4BDA3CA34EA0C1315FCBE /* libPods-dqxRecipe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dqxRecipe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		580AEFD11DEDA5E4009C2682 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		580AEFD51DEEAEC1009C2682 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5873BF071DE82280005B6BD5 /* DRDetailMaterialCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DRDetailMaterialCell.h; path = CustomViews/RecipeCategories/Cells/DRDetailMaterialCell.h; sourceTree = "<group>"; };
 		5873BF081DE8229E005B6BD5 /* DRDetailMaterialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRDetailMaterialCell.m; path = CustomViews/RecipeCategories/Cells/DRDetailMaterialCell.m; sourceTree = "<group>"; };
 		5873BF0A1DE82483005B6BD5 /* DRDetailMaterialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DRDetailMaterialCell.xib; path = CustomViews/RecipeCategories/Cells/DRDetailMaterialCell.xib; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 		8478BF7C1DE4A3610052E351 /* dqxRecipe */ = {
 			isa = PBXGroup;
 			children = (
+				580AEFD51DEEAEC1009C2682 /* GoogleService-Info.plist */,
 				5873BF1C1DEA7A76005B6BD5 /* Models */,
 				58A556221DE5A62C004D1625 /* CustomViews */,
 				58A556071DE53C6B004D1625 /* Common */,
@@ -451,7 +454,7 @@
 				TargetAttributes = {
 					8478BF791DE4A3610052E351 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 887CVK63XR;
+						DevelopmentTeam = 62JG8Z6Y54;
 						ProvisioningStyle = Automatic;
 					};
 					8478BF921DE4A3610052E351 = {
@@ -498,6 +501,7 @@
 				8478BF8A1DE4A3610052E351 /* Assets.xcassets in Resources */,
 				8478BF881DE4A3610052E351 /* Main.storyboard in Resources */,
 				5873BF0B1DE82483005B6BD5 /* DRDetailMaterialCell.xib in Resources */,
+				580AEFD61DEEAEC1009C2682 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,7 +739,7 @@
 			baseConfigurationReference = 90801B85F98F4F31E78DEC1C /* Pods-dqxRecipe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 887CVK63XR;
+				DEVELOPMENT_TEAM = 62JG8Z6Y54;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks",
@@ -776,7 +780,7 @@
 			baseConfigurationReference = A55A128C9FC914D1DB984382 /* Pods-dqxRecipe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 887CVK63XR;
+				DEVELOPMENT_TEAM = 62JG8Z6Y54;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks",
