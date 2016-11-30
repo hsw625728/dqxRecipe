@@ -13,6 +13,7 @@
 
 @property (nonatomic, copy) NSString *itemName;
 @property (nonatomic, copy) NSString *iconName;
+@property (nonatomic, copy) NSString *itemMemo;
 
 @end
 

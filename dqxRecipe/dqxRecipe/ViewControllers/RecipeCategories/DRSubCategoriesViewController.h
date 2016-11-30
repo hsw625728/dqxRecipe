@@ -13,6 +13,7 @@
 
 @interface DRSubCategoriesViewController : DRBaseViewController
 @property (nonatomic, assign) int index;
+@property (strong, nonatomic) NSString *viewTitleStr;
 @end
 
 #endif /* DRSubCategoriesViewController_h */

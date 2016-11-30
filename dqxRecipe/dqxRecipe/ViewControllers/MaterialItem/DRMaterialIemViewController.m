@@ -10,6 +10,8 @@
 #import "DRMaterialIemViewController.h"
 #import "UIImage+Common.h"
 #import "DRRecipeCategoriesCell.h"
+#import "DRRecipeSearchItem.h"
+#import "DRRecipeSearchCell.h"
 #import "DRRecipeCategoriesHeaderView.h"
 #import "View+MASAdditions.h"
 
@@ -23,6 +25,7 @@
     NSArray *sectionTitles;
     NSArray *rowTitles;
     NSArray *rowImageNames;
+    NSArray *rowPrice;
 }
 
 #pragma mark - Lifecycle
@@ -43,8 +46,6 @@
     
     self.navigationItem.title = DRMaterialItem;
     
-    //[self addNavigationBarLeftSearchItem];
-    //[self addNavigationBarRightMeItem];
     [self setupViews];
     
     //设置导航栏
@@ -60,6 +61,7 @@
     sectionTitles = MATERIAL_ITEM;
     rowTitles = MATERIAL_ITEM_NAMES;
     rowImageNames = MATERIAL_ITEM_IMAGES;
+    rowPrice = MATERIAL_ITEM_PRICE;
 }
 
 - (void)setupViews {
@@ -68,9 +70,12 @@
         tableView.backgroundColor = DRViewControllerBGColor;
         tableView.dataSource = self;
         tableView.delegate = self;
-        [tableView registerClass:[DRRecipeCategoriesCell class] forCellReuseIdentifier:kRecipeCategoriesCellID];
+
         [tableView registerClass:[DRRecipeCategoriesHeaderView class] forHeaderFooterViewReuseIdentifier:kDRRecipeCategoriesHeaderViewID];
-        tableView.rowHeight = [DRRecipeCategoriesCell cellHeight];
+        [tableView registerClass:[DRRecipeSearchCell class] forCellReuseIdentifier:kDRRecipeSearchCellID];
+        //tableView.rowHeight = [DRRecipeCategoriesCell cellHeight];
+        tableView.rowHeight = [DRRecipeSearchCell cellHeight];
+
         
         
         [self.view addSubview:tableView];
@@ -98,12 +103,18 @@
     return rows.count;
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    DRRecipeCategoriesCell *cell = [tableView dequeueReusableCellWithIdentifier:kRecipeCategoriesCellID forIndexPath:indexPath];
-    [cell configureCellWithTitle:rowTitles[indexPath.section][indexPath.row] imageName:rowImageNames[indexPath.section][indexPath.row] atIndexPath:indexPath];
-    
+    DRRecipeSearchCell *cell = [tableView dequeueReusableCellWithIdentifier:kDRRecipeSearchCellID forIndexPath:indexPath];
+
+    DRRecipeSearchItem *model = [[DRRecipeSearchItem alloc] init];
+    model.itemName = rowTitles[indexPath.section][indexPath.row];
+    model.iconName = [NSString stringWithFormat:@"Icon-%@", model.itemName];
+    model.itemMemo = rowPrice[indexPath.section][indexPath.row];
+    [(DRRecipeSearchCell *)cell configureCellWithSearchItem:(DRRecipeSearchItem *)model];
     return cell;
 }
+
 
 #pragma mark UITableViewDelegate
 

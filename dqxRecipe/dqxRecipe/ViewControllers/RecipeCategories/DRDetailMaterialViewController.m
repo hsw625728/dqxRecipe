@@ -12,10 +12,12 @@
 #import "DRDetailMaterialCell.h"
 #import "UIImage+Common.h"
 #import "View+MASAdditions.h"
+#import "GoogleMobileAds/GoogleMobileAds.h"
 
 @interface DRDetailMaterialViewController() <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) GADNativeExpressAdView  *expressView;
 
 @end
 
@@ -61,7 +63,39 @@
     [self setupViews];
     [_tableView registerNib:[UINib nibWithNibName:@"DRDetailMaterialHeaderCell" bundle:nil] forCellReuseIdentifier:@"DRDetailMaterialHeaderCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"DRDetailMaterialCell" bundle:nil] forCellReuseIdentifier:@"DRDetailMaterialCell"];
-     
+    //首页最下方常驻的Google广告
+    NSMutableArray *history;
+    NSString *docPath =  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *path = [docPath stringByAppendingPathComponent:@"RecipeHistory"];
+    
+    history = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    if (ISNULL(history))
+    history = [[NSMutableArray alloc] init];
+    //if (history.count >= 0)
+    //{
+    _expressView = [[GADNativeExpressAdView alloc] initWithFrame:CGRectMake(0.0,
+                                                                  self.view.frame.size.height -
+                                                                  150,
+                                                                  self.view.frame.size.width,
+                                                                  150)];
+    //NSLog(@"Google Mobile Ads SDK version: %@", [GADRequest sdkVersion]);
+    //中等高度原生广告位
+    _expressView.adUnitID = @"ca-app-pub-9308902363520222/8538756195";
+    //Google AdMob提供的测试广告ID
+    //_expressView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+    
+    _expressView.rootViewController = self;
+    GADRequest *request = [GADRequest request];
+    //request.testDevices = @[ @"66fc40441247f9df253bbcaa32f528bb" ];
+    [_expressView loadRequest:request];
+    
+    [self.view addSubview:_expressView];
+    [_expressView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(@(self.view.frame.size.width));
+        make.height.equalTo(@150);
+        make.bottom.left.equalTo(self.view);
+    }];
+    //}
 }
 #pragma mark - Private Method
 

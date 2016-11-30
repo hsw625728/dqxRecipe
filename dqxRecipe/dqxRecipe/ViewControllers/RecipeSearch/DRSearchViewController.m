@@ -57,10 +57,10 @@
 }
 
 - (void)setupViews {
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel)];
+    //self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(searching)];
     
     _searchBar = [[UISearchBar alloc] init];
-    _searchBar.placeholder = @"输入道具名称关键字";
+    _searchBar.placeholder = @"输入关键字(例如：剑)";
     _searchBar.tintColor = DRLightGrayTextColor;
     _searchBar.returnKeyType = UIReturnKeySearch;
     _searchBar.searchBarStyle = UISearchBarStyleMinimal;
@@ -180,6 +180,7 @@
     DRRecipeSearchItem *model = [[DRRecipeSearchItem alloc] init];
     model.itemName = dataSource[indexPath.row];
     model.iconName = [NSString stringWithFormat:@"Icon-%@.png", model.itemName];
+    model.itemMemo = @"点击查看制作所需素材";
     [(DRRecipeSearchCell *)cell configureCellWithSearchItem:(DRRecipeSearchItem *)model];
     
 }

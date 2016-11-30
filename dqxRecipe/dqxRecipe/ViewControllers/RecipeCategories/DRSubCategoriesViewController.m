@@ -54,6 +54,7 @@
     
     [self initDatas];
     [self setupViews];
+    self.navigationItem.title = _viewTitleStr;
 }
 #pragma mark - Private Method
 
@@ -61,91 +62,109 @@
     switch(self.index)
     {
         case 11:
+            _viewTitleStr = @"武器配方";
             sectionTitles = RECIPT_SECTION1_1;
             rowTitles = RECIPT_SECTION1_1_SUB;
             rowImageNames = RECIPT_SECTION1_1_SUB_IMAGE;
             break;
         case 12:
+            _viewTitleStr = @"家具配方";
             sectionTitles = RECIPT_SECTION1_2;
             rowTitles = RECIPT_SECTION1_2_SUB;
             rowImageNames = RECIPT_SECTION1_2_SUB_IMAGE;
             break;
         case 13:
+            _viewTitleStr = @"庭具配方";
             sectionTitles = RECIPT_SECTION1_3;
             rowTitles = RECIPT_SECTION1_3_SUB;
             rowImageNames = RECIPT_SECTION1_3_SUB_IMAGE;
             break;
         case 21:
+            _viewTitleStr = @"防具锻造配方";
             sectionTitles = RECIPT_SECTION2_1;
             rowTitles = RECIPT_SECTION2_1_SUB;
             rowImageNames = RECIPT_SECTION2_1_SUB_IMAGE;
             break;
         case 31:
+            _viewTitleStr = @"道具配方";
             sectionTitles = RECIPT_SECTION3_1;
             rowTitles = RECIPT_SECTION3_1_SUB;
             rowImageNames = RECIPT_SECTION3_1_SUB_IMAGE;
             break;
         case 32:
+            _viewTitleStr = @"家具配方";
             sectionTitles = RECIPT_SECTION3_2;
             rowTitles = RECIPT_SECTION3_2_SUB;
             rowImageNames = RECIPT_SECTION3_2_SUB_IMAGE;
             break;
         case 33:
+            _viewTitleStr = @"庭具配方";
             sectionTitles = RECIPT_SECTION3_3;
             rowTitles = RECIPT_SECTION3_3_SUB;
             rowImageNames = RECIPT_SECTION3_3_SUB_IMAGE;
             break;
         case 34:
+            _viewTitleStr = @"素材配方";
             sectionTitles = RECIPT_SECTION3_4;
             rowTitles = RECIPT_SECTION3_4_SUB;
             rowImageNames = RECIPT_SECTION3_4_SUB_IMAGE;
             break;
         case 41:
+            _viewTitleStr = @"武器配方";
             sectionTitles = RECIPT_SECTION4_1;
             rowTitles = RECIPT_SECTION4_1_SUB;
             rowImageNames = RECIPT_SECTION4_1_SUB_IMAGE;
             break;
         case 42:
+            _viewTitleStr = @"家具配方";
             sectionTitles = RECIPT_SECTION4_2;
             rowTitles = RECIPT_SECTION4_2_SUB;
             rowImageNames = RECIPT_SECTION4_2_SUB_IMAGE;
             break;
         case 43:
+            _viewTitleStr = @"庭具配方";
             sectionTitles = RECIPT_SECTION4_3;
             rowTitles = RECIPT_SECTION4_3_SUB;
             rowImageNames = RECIPT_SECTION4_3_SUB_IMAGE;
             break;
         case 44:
+            _viewTitleStr = @"钓竿配方";
             sectionTitles = RECIPT_SECTION4_4;
             rowTitles = RECIPT_SECTION4_4_SUB;
             rowImageNames = RECIPT_SECTION4_4_SUB_IMAGE;
             break;
         case 51:
+            _viewTitleStr = @"防具配方";
             sectionTitles = RECIPT_SECTION5_1;
             rowTitles = RECIPT_SECTION5_1_SUB;
             rowImageNames = RECIPT_SECTION5_1_SUB_IMAGE;
             break;
         case 52:
+            _viewTitleStr = @"家具配方";
             sectionTitles = RECIPT_SECTION5_2;
             rowTitles = RECIPT_SECTION5_2_SUB;
             rowImageNames = RECIPT_SECTION5_2_SUB_IMAGE;
             break;
         case 61:
+            _viewTitleStr = @"肉料理配方";
             sectionTitles = RECIPT_SECTION6_1;
             rowTitles = RECIPT_SECTION6_1_SUB;
             rowImageNames = RECIPT_SECTION6_1_SUB_IMAGE;
             break;
         case 62:
+            _viewTitleStr = @"鱼料理配方";
             sectionTitles = RECIPT_SECTION6_2;
             rowTitles = RECIPT_SECTION6_2_SUB;
             rowImageNames = RECIPT_SECTION6_2_SUB_IMAGE;
             break;
         case 63:
+            _viewTitleStr = @"意面和米饭配方";
             sectionTitles = RECIPT_SECTION6_3;
             rowTitles = RECIPT_SECTION6_3_SUB;
             rowImageNames = RECIPT_SECTION6_3_SUB_IMAGE;
             break;
         case 64:
+            _viewTitleStr = @"甜点配方";
             sectionTitles = RECIPT_SECTION6_4;
             rowTitles = RECIPT_SECTION6_4_SUB;
             rowImageNames = RECIPT_SECTION6_4_SUB_IMAGE;

@@ -56,6 +56,15 @@
     [self setupViews];
     
     //首页最下方常驻的Google广告
+    NSMutableArray *history;
+    NSString *docPath =  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *path = [docPath stringByAppendingPathComponent:@"RecipeHistory"];
+    
+    history = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    if (ISNULL(history))
+        history = [[NSMutableArray alloc] init];
+    //if (history.count >= 0)
+    //{
     _bannerView = [[GADBannerView alloc] initWithFrame:CGRectMake(0.0,
                                                                   self.view.frame.size.height -
                                                                   GAD_SIZE_320x50.height,
@@ -68,7 +77,7 @@
     //self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
     self.bannerView.rootViewController = self;
     GADRequest *request = [GADRequest request];
-    request.testDevices = @[ @"66fc40441247f9df253bbcaa32f528bb" ];
+    //request.testDevices = @[ @"66fc40441247f9df253bbcaa32f528bb" ];
     [self.bannerView loadRequest:request];
     
     [self.view addSubview:_bannerView];
@@ -77,24 +86,25 @@
         make.height.equalTo(@50);
         make.bottom.left.equalTo(self.view);
     }];
+    //}
 }
 #pragma mark - Private Method
 
 - (void)initDatas {
     //加载分类标题数据
-    sectionTitles = @[@"武器锻造", @"防具锻造", @"道具锻造", @"木工", @"裁缝", @"烹饪"];
+    sectionTitles = @[@"武器锻造", @"防具锻造", @"道具锻造", @"木工", @"裁缝"/*, @"烹饪"*/];
     rowTitles = @[@[@"武器配方", @"家具配方", @"庭具配方"],
                   @[@"防具锻造配方"],
-                  @[@"道具配方", @"家具配方", @"庭具配方", @"素材配方"],
-                  @[@"武器配方", @"家具配方", @"庭具配方", @"钓竿配方"],
-                  @[@"防具配方", @"家具配方"],
-                  @[@"肉料理配方", @"鱼料理配方", @"意面和米饭配方", @"甜点配方"]];
+                  @[@"道具配方"/*, @"家具配方", @"庭具配方"*/, @"素材配方"],
+                  @[@"武器配方"/*, @"家具配方", @"庭具配方", @"钓竿配方"*/],
+                  @[@"防具配方"/*, @"家具配方"*/]];/*,
+                  @[@"肉料理配方", @"鱼料理配方", @"意面和米饭配方", @"甜点配方"]];*/
     rowImageNames = @[@[@"Icon-毁灭者", @"Icon-天文望远镜·金", @"Icon-天文仪·金"],
                       @[@"Icon-小鬼圆盾"],
-                      @[@"Icon-白金锻造锤", @"section3", @"section3", @"Icon-彩虹宝珠"],
-                      @[@"Icon-魔萌短杖", @"section4", @"section4", @"section4"],
-                      @[@"Icon-知识长袍上装", @"section5"],
-                      @[@"section6", @"section6", @"section6", @"section6"]];
+                      @[@"Icon-白金锻造锤"/*, @"section3", @"section3"*/, @"Icon-彩虹宝珠"],
+                      @[@"Icon-魔萌短杖"/*, @"section4", @"section4", @"section4"*/],
+                      @[@"Icon-知识长袍上装"/*, @"section5"*/]];/*,
+                      @[@"section6", @"section6", @"section6", @"section6"]];*/
 }
 
 
