@@ -64,6 +64,7 @@
     [_tableView registerNib:[UINib nibWithNibName:@"DRDetailMaterialHeaderCell" bundle:nil] forCellReuseIdentifier:@"DRDetailMaterialHeaderCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"DRDetailMaterialCell" bundle:nil] forCellReuseIdentifier:@"DRDetailMaterialCell"];
     //首页最下方常驻的Google广告
+    /*
     NSMutableArray *history;
     NSString *docPath =  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     NSString *path = [docPath stringByAppendingPathComponent:@"RecipeHistory"];
@@ -96,6 +97,7 @@
         make.bottom.left.equalTo(self.view);
     }];
     //}
+     */
 }
 #pragma mark - Private Method
 
